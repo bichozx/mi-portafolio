@@ -2,7 +2,7 @@ import avatar from '../../assets/avatar.png';
 import { profile } from '../../infrastructure/data/profile.data';
 
 export default function About() {
-  console.log(profile);
+  
   return (
     <section id="about" className="w-full py-20">
       <div className="max-w-7xl mx-auto px-6">
