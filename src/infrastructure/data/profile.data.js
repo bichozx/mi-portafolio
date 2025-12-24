@@ -3,9 +3,10 @@
 export const profile = {
   name: "Juan Camilo Giraldo",
   headline: "Construyo interfaces modernas, escalables y orientadas a negocio",
-  role: "Desarrollador Full-Stack (React)",
+  role: "Desarrollador Full-Stack (Mern Stack-Next.js)",
   location: "Colombia",
   avatar: "/assets/avatar.png",
+  cv: "/public/cv/Cv_Actual_2.2.1.pdf",
 
   contact: {
     email: "kmilo2021@outlook.com",

@@ -1,5 +1,6 @@
 import Button from '../components/ui/Button';
 import FadeIn from '../components/animations/FadeIn';
+import { FileDown } from "lucide-react";
 import Header from '../components/layout/Header';
 import { motion as Motion } from 'framer-motion';
 import { profile } from '../../infrastructure/data/profile.data';
@@ -7,10 +8,7 @@ import { profile } from '../../infrastructure/data/profile.data';
 export default function Home() {
   return (
     <Header>
-      <section
-        id="home"
-        className="w-full min-h-screen flex items-center"
-      >
+      <section id="home" className="w-full min-h-screen flex items-center">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Texto */}
@@ -21,18 +19,25 @@ export default function Home() {
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                 >
-                  Hola, soy{" "}
-                  <span className="text-indigo-400">Juan Camilo</span>
+                  Hola, soy <span className="text-indigo-400">Juan Camilo</span>
                 </Motion.h1>
 
-                <p className="text-gray-300 max-w-xl mb-6">
-                  {profile.summary}
-                </p>
+                <p className="text-gray-300 max-w-xl mb-6">{profile.summary}</p>
               </FadeIn>
 
               <div className="flex gap-4">
                 <a href="#projects">
                   <Button>Ver proyectos</Button>
+                </a>
+                <a
+                  href={profile.cv}
+                  download
+                  className="inline-flex items-center px-5 py-2 rounded-lg
+               bg-indigo-500/10 text-indigo-400
+               border border-indigo-500/30
+               hover:bg-indigo-500/20 transition"
+                >
+                  <FileDown size={18} className="ml-2" />Descargar CV
                 </a>
                 <a
                   href={profile.social.github}
