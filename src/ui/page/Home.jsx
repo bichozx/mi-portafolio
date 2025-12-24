@@ -55,7 +55,7 @@ export default function Home() {
               <FadeIn delay={0.5}>
                 <div className="w-80 h-80 xl:w-96 xl:h-96 bg-linear-to-br from-indigo-600/20 to-transparent rounded-2xl flex items-center justify-center border border-white/5">
                   <img
-                    src="/public/logoKmilo1.jpeg"
+                    src="/logoKmilo1.jpeg"
                     alt="logoKmilo1"
                     className="w-64 xl:w-72"
                   />
